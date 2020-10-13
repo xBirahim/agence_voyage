@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+            <link rel="stylesheet" href="../css/style.css">
+            <meta charset="UTF-8">
+            <title>reservation_form</title>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="accueil.html"> 
+                <img src="/media/images/paysage.png"
+            
+                alt="paysage">
+            </a> 
+        </header>
+
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="retest.html">Nos Offres</a>
+            <a href="retest.html">Hôtels</a>
+            <a href="retest.html">Où partir cette année ?</a>
+            <a href="reservation_form.html">Reserver</a>
+            <a href="contact_us.html">Nous contacter</a>
+        </nav>
+
+        <h1>Formulaire de réservation</h1>
+
+            <form action="recapitulatif.html">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id=prenom name="prénom" required="required">
+                <small>*</small><br />
+
+                <label for="nom">Nom:</label>
+                <input type="text" id=nom name="nom" required="required">
+                <small>*</small><br />
+
+                <label for="mail">Adresse électronique:</label>
+                <input type="email" id=mail name="mail" required="required">
+                <small>*</small><br />
+
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id=telephone name="telephone"><br />
+
+                <label for="depart">Date de départ:</label>
+                <input type="date" id=depart name="depart" required="required">
+                <small>*</small><br />
+
+                <label for="arrive">Date d'arrivé:</label>
+                <input type="date" id=arrive name="arrive" required>
+                <small>*</small><br />
+
+                <label for="adultes">Nombre d'adultes:</label>
+                <input type="number" id=adultes name="adultes" required="required" min="1" max="12">
+                <small>*</small><br />
+
+                <label for="enfants">Nombre d'enfants:</label>
+                <input type="number" id=enfants name="adultes" required="required" min="0" max="12">
+                <small>-12 ans</small>
+                <small>*</small><br />
+                
+
+                <p>Petit-déjeuner ?</p>
+
+                <div>
+                    <label for="breakfast_yes">Oui:</label>
+                    <input type="radio" id=breakfast_yes name="breakfast" checked>
+
+                    <label for="breakfast_no">Non:</label>
+                    <input type="radio" id=breakfast_no name="breakfast"><br />
+                    
+                </div>
+
+                <label for="renseignement">Renseignements:</label>
+                <input type="text" id=renseignement name="renseignement"><br />
+
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+
+            </form>
+           
+
+    </body>
