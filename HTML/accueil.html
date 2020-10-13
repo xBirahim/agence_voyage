@@ -1,50 +1,104 @@
 <!DOCTYPE html>
     <html lang="fr">
     <head>
-            <meta charset="UTF-8">
-            <title>test</title>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <link rel="stylesheet" href="../css/page_principale.css">
     </head>
+
     <body>
         <header>
-            <a href="test.html"> 
-                <img src="media/images/paysage.png"
-            
-                alt="paysage">
-            </a> 
-                
+
+            <a href="accueil.html"> 
+            <img src="media/images/paysage1.png" height="216" width="384" alt="paysage">
+            </a>    
+            <br>
             <label for="search_bar">Rechercher:</label>
             <input type="search" id="search_bar" name="q"
-                aria-label="Rechercher un pays">
+            aria-label="Rechercher un pays">
             <button>Search</button>
-        
+            
         </header>
-
         <nav>
-            <a href="test.html">AccueilTEST</a>
-            <a href="retest.html">Nos Offres</a>
-            <a href="retest.html">Hôtels</a>
-            <a href="retest.html">Où partir cette année ?</a>
+            <a href="accueil.html">Accueil</a>
             <a href="reservation_form.html">Reserver</a>
             <a href="contact_us.html">Nous contacter</a>
+            <a href="connexion.html">Connexion</a> 
+            <a href="panier.html">Panier</a>
         </nav>
 
+        <div class="munu_def">
+            <div class="slide">
+                <div class="nombre">1/4</div>
+                <img src="media/images/paysage1.png" style="width: 100%" alt="paysage"> 
+                <div class="destination">destination</div>
+                <div class="texte">Presentation</div>
+                <a href="reservation_form.html">réservation</a>  
+            </div>
+            <div class="slide">
+                <div class="nombre">2/4</div>
+                <img src="media/images/paysage1.png" style="width: 100%" alt="paysage"> 
+                <div class="destination">destination</div>
+                <div class="texte">Presentation</div>
+                <a href="reservation_form.html">réservation</a>  
+            </div>
+            <div class="slide">
+                <div class="nombre">3/4</div>
+                <img src="media/images/paysage1.png" style="width: 100%" alt="paysage"> 
+                <div class="destination">destination</div>
+                <div class="texte">Presentation</div>
+                <a href="reservation_form.html">réservation</a>  
+            </div>
+            <div class="slide">
+                <div class="nombre">4/4</div>
+                <img src="media/images/paysage1.png" style="width: 100%" alt="paysage"> 
+                <div class="destination"> destination</div>
+                <div class="texte">Presentation</div>
+                <a href="reservation_form.html">réservation</a>  
+            </div>
+            <a class="bouton_precedant" onclick="plusSlide(-1)">&#10094</a>
+            <a class="bouton_suivant" onclick="plusSlide(1)">&#10095</a>
+            
+        </div>
+        <br>
+    <div style="text-align: center;">
+        <span class="point" onclick="currentSlide(1)"></span>
+        <span class="point" onclick="currentSlide(2)"></span>
+        <span class="point" onclick="currentSlide(3)"></span>
+        <span class="point" onclick="currentSlide(4)"></span>
+    </div>
         <ul>
-            <li>Dakar
-                <img src="media/images/test1.jpg" alt="Dakar">
+            <li>Dakar    
+                <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a> 
+                <p>   paragraphe 1</p> 
+                <a href="reservation_form.html">réservation</a>  
             </li>
                 
             <li>Montreal
-                <img src="media/images/test2.jpg" alt="Montreal">
+                <a>  <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>   
+                <p> paragraphe 2 </p> 
+                <a href="reservation_form.html">réservation</a>   
             </li>
 
             <li>Dublin
-                <img src="media/images/test3.jpg" alt="Dublin">
+                <a> <img src="media/images/dublin.jpg" height="117" width="195" alt="paysage"></a> 
+                <p> paragraphe 3</p>  
+                <a href="reservation_form.html">réservation</a>    
             </li>
 
             <li>Sao Paulo
-                <img src="media/images/test4.jpg" alt="Sao Paulo">
+                <a> <img src="media/images/saopolo.jpg" height="63" width="200" alt="paysage"></a>  
+                <p> paragraphe 4</p> 
+                <a href="reservation_form.html">réservation</a>    
             </li>
         </ul>
-          
+        <footer>
+            <nav> 
+                <a href="contact_us.html">Nous contacter</a> 
+            
+            
+            
+            </nav>
+        </footer>
     </body>
 </html>
