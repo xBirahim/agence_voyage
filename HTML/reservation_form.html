@@ -48,8 +48,8 @@
                 <input type="date" id=depart name="depart" required="required">
                 <small>*</small><br />
 
-                <label for="arrive">Date d'arrivé:</label>
-                <input type="date" id=arrive name="arrive" required>
+                <label for="retour">Date d'arrivé:</label>
+                <input type="date" id=retour name="retour" required>
                 <small>*</small><br />
 
                 <label for="adultes">Nombre d'adultes:</label>
@@ -80,6 +80,10 @@
                 <input type="reset" value="Effacer">
 
             </form>
+
+            <button type="button" onclick=calcul()>
+                Test JS
+            </button>
 
             <div>
                 <p> Prix Total :</p>
