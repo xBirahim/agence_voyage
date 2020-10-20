@@ -3,9 +3,9 @@
     display:grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    text-align: center;
 
-    background-image: url(../HTML/media/images/fond_site.jpg);
+
+    background-color: whitesmoke;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,20 +17,29 @@
 
     height: 30vh; /* à titre d'exemple */
     background-color: lightslategrey;
+    width: 100%;
     
 
 }
 .header {
 
     height: 20vh; /* à titre d'exemple */
-    background-color: lightslategrey;
+    background-color: gray;
     
 
 }
 
 .foot_lien{
+    text-align: center;
+
+    padding-top: 15vh ;
+    color:white;
+    font-family: Read-Regular,Arial,Helvetica,Liberation Sans,FreeSans,sans-serif;
+    font-size: 20px;
 
 
 
-
+}
+.corps {
+    text-align: center;
 }
