@@ -1,6 +1,8 @@
+window.onload=function(){
 var slideIndex = 1;
 showSlides(slideIndex);
-
+}
+var slideIndex = 1;
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);

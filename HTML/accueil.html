@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="fond_site">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <script src='../js/accueil.js'> </script>
 
 </head>
-<header>
+<header class="header">
 
     <a href="accueil.html">
     </a>
@@ -17,9 +17,6 @@
     <label for="search_bar">Rechercher:</label>
     <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
     <button>Search</button>
-
-</header>
-<main>
     <nav>
         <a href="accueil.html">Accueil</a>
         <a href="reservation_form.html">Reserver</a>
@@ -27,9 +24,12 @@
         <a href="connexion.html">Connexion</a>
         <a href="panier.html">Panier</a>
     </nav>
-    <section class="fond_site">
+
+</header >
+<main class="corps"> 
+    <article >
         <div class="slideshow-container">
-    
+
             <div class="mySlides fade">
                 <div class="nombre">1 / 3</div>
                 <img src="media/images/ville-montreal.jpg" style="width:100%">
@@ -40,11 +40,11 @@
             <div class="mySlides fade">
                 <div class="nombre">2/ 3</div>
                 <img src="media/images/Montagnes Italy.jpg" style="width:100%">
-                <div class="text">Italy</div>
+                <div class="text">Italie</div>
                 <div class="prentation">Italy_presentation</div>
                 <a href="reservation_form.html">Reservation</a>
             </div>
-    
+
             <div class="mySlides fade">
                 <div class="nombre">3/ 3</div>
                 <img src="media/images/dublin.jpg" style="width:100%">
@@ -52,9 +52,9 @@
                 <div class="prentation">Dublin_presentation</div>
                 <a href="reservation_form.html">Reservation</a>
             </div>
-    
+
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    
+
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -62,46 +62,45 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-    
+
         <br>
-    
-    
-        <ul>
-            <li>Dakar
-                <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a>
-                <p> paragraphe 1</p>
-                <a href="reservation_form.html">réservation</a>
-            </li>
-    
-            <li>Montreal
-                <a> <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>
-                <p> paragraphe 2 </p>
-                <a href="reservation_form.html">réservation</a>
-            </li>
-    
-            <li>Dublin
-                <a> <img src="media/images/dublin.jpg" height="117" width="195" alt="paysage"></a>
-                <p> paragraphe 3</p>
-                <a href="reservation_form.html">réservation</a>
-            </li>
-    
-            <li>Sao Paulo
-                <a> <img src="media/images/saopolo.jpg" height="63" width="200" alt="paysage"></a>
-                <p> paragraphe 4</p>
-                <a href="reservation_form.html">réservation</a>
-            </li>
-        </ul>
-    </section>
+
+
+        <section>Dakar
+            <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a>
+            <p> paragraphe 1</p>
+            <a href="reservation_form.html">réservation</a>
+        </section>
+
+        <section>Montreal
+            <a> <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>
+            <p> paragraphe 2 </p>
+            <a href="reservation_form.html">réservation</a>
+        </section>
+
+        <section>Dublin
+            <a> <img src="media/images/dublin.jpg" height="117" width="195" alt="paysage"></a>
+            <p> paragraphe 3</p>
+            <a href="reservation_form.html">réservation</a>
+        </section>
+
+        <section>Sao Paulo
+            <a> <img src="media/images/saopolo.jpg" height="63" width="200" alt="paysage"></a>
+            <p> paragraphe 4</p>
+            <a href="reservation_form.html">réservation</a>
+        </section>
+
+    </article>
 </main>
-<footer class="footer">
-    <ul>
-        <a href="contact_us.html">Nous contacter</a>
 
+<div class="footer-container">
+    <footer class="footer">
+        <span class="logo"></span>
+        <nav class="foot_lien">
+            <a href=contact_us.html>CONTACT</a>
 
-
-
-    </ul>
-</footer>
-
+        </nav>
+    </footer>
+</div>
 
 </html>
