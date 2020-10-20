@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>test</title>
-        <link rel="stylesheet" href="../css/square_bg.css">
+        <link rel="stylesheet" href="../css/style_fond_du_site.css">
+        <script src="../js/searchtest.js"></script>
     </head>
 
     <body>
@@ -17,7 +18,7 @@
             <label for="search_bar">Rechercher:</label>
             <input type="search" id="search_bar" name="q"
             aria-label="Rechercher un pays">
-            <button>Search</button>
+            <button id="search_button">Search</button>
             
         </header>
         <nav>
@@ -72,9 +73,16 @@
             <li>Dakar    
                 <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a> 
                 <p>   paragraphe 1</p> 
-                <a href="reservation_form.html">réservation</a>  
-            </li>
-                
+                <a href="reservation_form.html">réservation</a>  // Execute a function when the user releases a key on the keyboard
+                input.addEventListener("keyup", function(event) {
+                  // Number 13 is the "Enter" key on the keyboard
+                  if (event.keyCode === 13) {
+                    // Cancel the default action, if needed
+                    event.preventDefault();
+                    // Trigger the button element with a click
+                    document.getElementById("myBtn").click();
+                  }
+                }); 
             <li>Montreal
                 <a>  <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>   
                 <p> paragraphe 2 </p> 
