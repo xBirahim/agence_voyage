@@ -9,24 +9,28 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300vh;
-    color: black;
+    height: auto;
+    color : black;
 
 }
-.footer {
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    text-align: left ;
+.footer-container {
 
-    background-color: lightgrey;
-    opacity: 0.7;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: auto;
-    height: 30vh;
-    color: black;
+    height: 30vh; /* à titre d'exemple */
+    background-color: lightslategrey;
+    
+
+}
+.header {
+
+    height: 20vh; /* à titre d'exemple */
+    background-color: lightslategrey;
+    
 
 }
 
+.foot_lien{
 
+
+
+
+}
