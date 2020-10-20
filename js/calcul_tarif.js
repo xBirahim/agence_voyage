@@ -1,42 +1,33 @@
-let depart;
+var depart = document.getElementById("depart");
 
-let retour;
+var retour = document.getElementById("retour");
 
-let adultes;
+var adultes = document.getElementById("adultes");
 
-let enfants;
+var enfants = document.getElementById("enfants");
 
-let prix = 40;
+var prix_journalier = 40;
 
 function dateDifference() {
 
-  depart = new Date(document.getElementById("depart").value).getTime();
-retour = new Date(document.getElementById("retour").value).getTime();
-
-console.log(depart);
-console.log(retour);
+depart = new Date(depart.value).getTime();
+retour = new Date(retour.value).getTime();
 
 numberOfDays = (retour - depart)/(1000*60*60*24);
-  console.log(numberOfDays);
+console.log(numberOfDays);
 
 }
 
 
 function total() {
-    dateDifference();
-  paragrahe = document.getElementById("prix");
 
-  depart = document.getElementById("depart").value;
+      dateDifference();
 
-  retour = document.getElementById("retour").value;
+    paragrahe = document.getElementById("prix");
 
-  adultes = document.getElementById("adultes").value;
+    var prix_dejeuner;
 
-  enfants = document.getElementById("enfants").value;
-
-  let prix_dejeuner
-
-  if (document.getElementById("breakfast_yes").checked) {
+    if (document.getElementById("breakfast_yes").checked) {
 
     prix_dejeuner = 12 * adultes + 12 * enfants;
 
@@ -46,7 +37,7 @@ function total() {
 
   }
 
-  prix_total = adultes * prix + enfants * prix * 0.4 + prix_dejeuner;
+  prix_total = adultes.value * prix + enfants.value * prix_journalier * 0.4 + prix_dejeuner;
 
   paragrahe.innerHTML = prix_total;
 
