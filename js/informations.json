@@ -1,0 +1,14 @@
+{
+    "lieux": [
+       {
+          "nom": "Dakar",
+          "image": "../HTML/media/template",
+          "desc": "Voici Dakar"
+       },
+       {
+          "nom": "Paris",
+          "image": "../HTML/media/template",
+          "des": "voici paris"
+       }
+    ]
+ }
