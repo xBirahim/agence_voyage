@@ -6,6 +6,7 @@ window.addEventListener('load',function(){
       event.preventDefault();
       document.getElementById("search-button").click();
       console.log(searchbar.value);
+      
       ;
     }
 })
