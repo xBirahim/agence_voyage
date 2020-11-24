@@ -31,7 +31,7 @@ window.onload = function () {
 
         content.querySelector(".description").textContent = lieux[i]["desc"]
 
-        document.getElementById("liste").appendChild(content)
+        document.getElementById("all").appendChild(content)
 
         console.log(lieux[i]["desc"])
         
