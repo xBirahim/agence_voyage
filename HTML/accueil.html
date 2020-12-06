@@ -6,6 +6,7 @@
     <title>test</title>
     <link rel="stylesheet" href="../css/style_acc.css">
     <link rel="stylesheet" href="../css/style_fond_du_site.css">
+    <link rel="stylesheet" href="../css/css_trieur.css">
     <script src='../js/accueil.js'> </script>
     <script src='../js/js_header.js'> </script>
     <script src='../js/filtre.js'> </script>    
@@ -68,32 +69,32 @@
 
         <br>
         <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('petits prix')"> petits prix</button>
-            <button class="btn" onclick="filterSelection(' Nouvautées')"> Nouvautées</button>
-            <button class="btn" onclick="filterSelection('Amerique')"> Amerique</button>
-            <button class="btn" onclick="filterSelection('Europe')"> Europe </button>
+            <button class="btn active" onclick="tout()"> all</button>
+            <button class="btn" onclick="del('petitsPrix')"> petits prix</button>
+            <button class="btn" onclick="del('nouveau')"> Nouvautées</button>
+            <button class="btn" onclick="del('Amerique')"> Amerique</button>
+            <button class="btn" onclick="del('Europe')"> Europe </button>
           </div>
 
-        <div class= "filterDiv nouveau">Dakar
+        <div class= "trie nouveau">Dakar
             <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a>
             <p> paragraphe 1</p>
             <a href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "filterDiv nouveau Amerique">Montreal
+        <div class= "trie Nouvautées Amerique">Montreal
             <a> <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>
             <p> paragraphe 2 </p>
             <a href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "filterDiv Europe">Dublin
+        <div class= "trie Europe petitsPrix">Dublin
             <a> <img src="media/images/dublin.jpg" height="117" width="195" alt="paysage"></a>
             <p> paragraphe 3</p>
             <a href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "filterDiv Amerique">Sao Paulo
+        <div class= "trie Amerique">Sao Paulo
             <a> <img src="media/images/saopolo.jpg" height="63" width="200" alt="paysage"></a>
             <p> paragraphe 4</p>
             <a href="reservation_form.html">réservation</a>
