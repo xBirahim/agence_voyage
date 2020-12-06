@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../css/css_trieur.css">
     <script src='../js/accueil.js'> </script>
     <script src='../js/js_header.js'> </script>
-    <script src='../js/filtre.js'> </script>    
+    <script src='../js/filtre.js'> </script>   
+    <script src='../js/apiOpenWeather.js'> </script> 
     
 
 </head>
@@ -79,24 +80,36 @@
         <div class= "trie nouveau">Dakar
             <a> <img src="media/images/Dakar.jpg" height="108" width="192" alt="paysage"></a>
             <p> paragraphe 1</p>
+            <a id="temperature">temperature</a>
+            <a id="dakar"></a>
+            <script>meteo("dakar")</script>
             <a href="reservation_form.html">réservation</a>
         </div>
 
         <div class= "trie Nouvautées Amerique">Montreal
             <a> <img src="media/images/ville-montreal.jpg" height="119" width="196" alt="paysage"></a>
             <p> paragraphe 2 </p>
+            <a id="temperature">temperature</a>
+            <a id="montreal"></a>
+            <script>meteo("montreal")</script>
             <a href="reservation_form.html">réservation</a>
         </div>
 
         <div class= "trie Europe petitsPrix">Dublin
             <a> <img src="media/images/dublin.jpg" height="117" width="195" alt="paysage"></a>
             <p> paragraphe 3</p>
+            <a id="temperature">temperature</a>
+            <a id="dublin"></a>
+            <script>meteo("dublin")</script>
             <a href="reservation_form.html">réservation</a>
         </div>
 
         <div class= "trie Amerique">Sao Paulo
             <a> <img src="media/images/saopolo.jpg" height="63" width="200" alt="paysage"></a>
             <p> paragraphe 4</p>
+            <a id="temperature">temperature</a>
+            <a id="São Paulo"></a>
+            <script>meteo("São Paulo")</script>
             <a href="reservation_form.html">réservation</a>
         </div>
 

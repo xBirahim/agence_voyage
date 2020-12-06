@@ -19,7 +19,6 @@ function tout() { //fonction qui permet d'afficher tout les produits (pour l'ouv
 
 }
 
-
 function del(y) { // fonction qui ne concerve que les elements qui possedes y dans leurs classe
     var x;
     x = document.getElementsByClassName("trie"); //on recupere les valeurs dans les elements de classe trie
