@@ -2,7 +2,9 @@
 fait le 06/12/2020
 Theo Pannethier
 */
-
+window.addEventListener("load", function () { // permet au chargement de la page d'avoir tout les produits affichés
+tout()
+});
 function tout() { //fonction qui permet d'afficher tout les produits (pour l'ouverture de la page)
     var x;
     x = document.getElementsByClassName("trie"); //on recupere les valeurs dans les elements de classe trie
