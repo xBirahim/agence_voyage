@@ -1,7 +1,7 @@
 function meteo(ville) {
     var  chaine, temp, a;
 
-    chaine = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=3f03a1aebaf64441ca2a0cc3ad826819&units=metric'
+    chaine = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=a654b07e5d6cce84a26fac291d8863f7&units=metric'
     window.fetch(chaine)
         .then(res => res.json())
         .then(resJson => {
@@ -10,5 +10,5 @@ function meteo(ville) {
             document.getElementById(ville).innerHTML = temp
 
         })
-    window.onload(meteo())
+
 }
