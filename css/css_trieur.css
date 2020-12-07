@@ -1,6 +1,7 @@
 .trie {
     display: none;
-
+    position: relative;
+    padding-top: 2%;
 
 }
 .show{
