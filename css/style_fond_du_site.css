@@ -12,7 +12,7 @@
 }
 .footer-container {
     height: 30vh; /* à titre d'exemple */
-    background-color: lightslategrey;
+    background-color: rgb(109, 109, 109);
     width: 100%;
 }
 .foot_lien{
