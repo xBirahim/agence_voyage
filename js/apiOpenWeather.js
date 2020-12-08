@@ -6,7 +6,13 @@ function meteo(ville) {
         .then(res => res.json())
         .then(resJson => {
             a = resJson;
+<<<<<<< HEAD
+            temp = a['main']['temp'] + '°C';
+            document.getElementById(ville).innerHTML = temp
+
+=======
             temp = a['main']['temp'];
             return temp;
+>>>>>>> 26ad89e73be13ab52f2278e030d36159db878d2d
         })
 }

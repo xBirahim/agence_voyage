@@ -1,10 +1,7 @@
 .fond_site{
-
     display:grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-
-
     background-color: whitesmoke;
     background-size: cover;
     background-position: center;
@@ -14,31 +11,43 @@
 
 }
 .footer-container {
-
     height: 30vh; /* à titre d'exemple */
     background-color: lightslategrey;
     width: 100%;
-    
-
 }
-.header {
-
-    height: 20vh; /* à titre d'exemple */
-    background-color: gray;
-    
-
-}
-
 .foot_lien{
     text-align: center;
 	color:rgb(78, 0, 0);
-
     padding-top: 15vh ;
 	font:200% Arial;
+}
 
-
+.navigation{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    padding-left: 30%;
+    padding-right: 30%;
 
 }
+.navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+  }
+.navigation a.ici {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+    background-color: rgb(161, 161, 161);
+}
+
+
 .corps {
     text-align: center;
 }

@@ -17,61 +17,60 @@
 </head>
 <header class="header">
 
-    <a href="accueil.html">
-    </a>
-    <br>
-    <label for="search_bar">Rechercher:</label>
-    <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
-    <button id = "search-button">Search</button>
-    <nav>
-        <a href="accueil.html">Accueil</a>
+
+    <nav class="navigation">
+        <a   class = "ici" href="accueil.html">Accueil</a>
         <a href="reservation_form.html">Reserver</a>
         <a href="contact_us.html">Nous contacter</a>
         <a href="connexion.html">Connexion</a>
         <a href="panier.html">Panier</a>
     </nav>
-
+   <!-- <label for="search_bar">Rechercher:</label>
+    <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
+    <button id="search-button">Search</button>-->
 </header>
 <main class="corps">
-    <article>
-        <div class="slideshow-container">
+    <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="nombre">1 / 3</div>
-                <div class="boite">
-                    <img src="media/images/ville-montreal.jpg"  alt="image_montreal" style="width:100%">
-                    <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi que des informations sur les condtions du voyage et le prix.</div>
-                    <a class="reservation" href="reservation_form.html">Reservation</a>
-                </div>
+        <div class="mySlides fade">
+            <div class="nombre">1 / 3</div>
+            <div class="boite">
+                <img src="media/images/ville-montreal.jpg" alt="image_montreal" style="width:100%">
+                <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                    que des informations sur les condtions du voyage et le prix.</div>
+                <a class="reservation" href="reservation_form.html">Reservation</a>
             </div>
-            <div class="mySlides fade">
-                <div class="nombre">2/ 3</div>
-                <div class="boite">
-                    <img src="media/images/Montagnes_Italy.jpg" class="image" alt="image_italie" style="width:100%">
-                    <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi que des informations sur les condtions du voyage et le prix.</div>
-                    <a class="reservation" href="reservation_form.html">Reservation</a>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="nombre">3/ 3</div>
-                <div class="boite">
-                    <img src="media/images/dublin.jpg" class="image" alt="image_dublin" style="width:100%">
-                    <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi que des informations sur les condtions du voyage et le prix.</div>
-                    <a class="reservation" href="reservation_form.html">Reservation</a>
-                </div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="mySlides fade">
+            <div class="nombre">2/ 3</div>
+            <div class="boite">
+                <img src="media/images/Montagnes_Italy.jpg" class="image" alt="image_italie" style="width:100%">
+                <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                    que des informations sur les condtions du voyage et le prix.</div>
+                <a class="reservation" href="reservation_form.html">Reservation</a>
             </div>
         </div>
 
+        <div class="mySlides fade">
+            <div class="nombre">3/ 3</div>
+            <div class="boite">
+                <img src="media/images/dublin.jpg" class="image" alt="image_dublin" style="width:100%">
+                <div class="text">ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                    que des informations sur les condtions du voyage et le prix.</div>
+                <a class="reservation" href="reservation_form.html">Reservation</a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <section class="bloc_principal">
         <br>
         <div id="myBtnContainer">
             <button class="btn active" onclick="tout()"> all</button>
@@ -81,43 +80,55 @@
             <button class="btn" onclick="del('Europe')"> Europe </button>
         </div>
         <br>
-        <div class= "trie nouveau">Dakar
-            <a> <img src="media/images/Dakar.jpg" style="width:100%" alt="paysage"></a>
-            <p> paragraphe 1</p>
-            <a id="temperature">temperature</a>
-            <a id="dakar"></a>
-            <script>meteo("dakar")</script>
-            <a href="reservation_form.html">réservation</a>
+        <div class="trie nouveau">
+            <a> <img src="media/images/Dakar.jpg" class="image_trie" style="width:100%" alt="paysage"></a>
+            <p class="text_trie">Dakar ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                que des informations sur les condtions du voyage et le prix.</p>
+            <div class="temp_css">
+                <a id="temperature">temperature</a>
+                <a class="valeur_temp" id="dakar"></a>
+                <script>meteo("dakar")</script>
+            </div>
+            <a class="reservation2" href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "trie Nouvautées Amerique">Montreal
-            <a> <img src="media/images/ville-montreal.jpg" style="width:100%" alt="paysage"></a>
-            <p> paragraphe 2 </p>
-            <a id="temperature">temperature</a>
-            <a id="montreal"></a>
-            <script>meteo("montreal")</script>
-            <a href="reservation_form.html">réservation</a>
+        <div class="trie Nouvautées Amerique">
+            <a> <img src="media/images/ville-montreal.jpg" class="image_trie" style="width:100%" alt="paysage"></a>
+            <p class="text_trie">Montreal ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                que des informations sur les condtions du voyage et le prix.</p>
+            <div class="temp_css">
+                <a id="temperature">temperature</a>
+                <a class="valeur_temp" id="montreal"></a>
+                <script>meteo("montreal")</script>
+            </div>
+            <a class="reservation2" href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "trie Europe petitsPrix">Dublin
-            <a> <img src="media/images/dublin.jpg" style="width:100%" alt="paysage"></a>
-            <p> paragraphe 3</p>
-            <a id="temperature">temperature</a>
-            <a id="dublin"></a>
-            <script>meteo("dublin")</script>
-            <a href="reservation_form.html">réservation</a>
+        <div class="trie Europe petitsPrix">
+            <a> <img src="media/images/dublin.jpg" class="image_trie" style="width:100%" alt="paysage"></a>
+            <p class="text_trie">Dublin ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                que des informations sur les condtions du voyage et le prix.</p>
+            <div class="temp_css">
+                <a id="temperature">temperature</a>
+                <a class="valeur_temp" id="dublin"></a>
+                <script>meteo("dublin")</script>
+            </div>
+            <a class="reservation2" href="reservation_form.html">réservation</a>
         </div>
 
-        <div class= "trie Amerique">Sao Paulo
-            <a> <img src="media/images/saopolo.jpg" style="width:100%" alt="paysage"></a>
-            <p> paragraphe 4</p>
-            <a id="temperature">temperature</a>
-            <a id="São   Paulo"></a>
-            <script>meteo("São Paulo")</script>
-            <a href="reservation_form.html">réservation</a>
+        <div class="trie Amerique">
+            <a> <img src="media/images/saopolo.jpg" class="image_trie" style="width:100%" alt="paysage"></a>
+            <p class="text_trie">Sao Paulo ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
+                que des informations sur les condtions du voyage et le prix.</p>
+            <div class="temp_css">
+                <a id="temperature">temperature</a>
+                <a class="valeur_temp" id="São Paulo"></a>
+                <script>meteo("São Paulo")</script>
+            </div>
+            <a class="reservation2" href="reservation_form.html">réservation</a>
         </div>
 
-    </article>
+    </section>
 </main>
 
 <div class="footer-container">
