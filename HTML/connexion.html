@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr" class="fond_site">
 
+
 <head>
     <meta charset="UTF-8">
     <title>test</title>
-    <link rel="stylesheet" href="../css/style_acc.css">
     <link rel="stylesheet" href="../css/style_fond_du_site.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src='../js/accueil.js'></script>
@@ -12,22 +12,27 @@
     <script src='../js/filtre.js'></script>
     <script src='../js/apiOpenWeather.js'></script>
 
-
 </head>
 
+<header>
+
+
+    <nav class="navigation">
+        <!--le css de cette partie se trouve dans ../css/style_fond_du_site.css 
+        la barre de navigation est largement inspiré de w3s-->
+        <a alt="Accueil" href="index.html">Accueil</a>
+        <a href="reservation_form.html" alt="Reserver">Reserver</a>
+        <a href="contact_us.html" alt="Nous contacter">Nous contacter</a>
+        <a class="ici" href="connexion.html" alt="Connexion">Connexion</a>
+        <a href="panier.html" alt="Panier">Panier</a>
+    </nav>
+
+</header>
+
+
+
 <body>
-    <header class="header">
 
-
-        <nav class="navigation">
-            <a class="ici" href="accueil.html">Accueil</a>
-            <a href="reservation_form.html">Reserver</a>
-            <a href="contact_us.html">Nous contacter</a>
-            <a href="connexion.html">Connexion</a>
-            <a href="panier.html">Panier</a>
-        </nav>
-
-    </header>
     <h2>Connexion</h2>
 
     <form action="index.html">
@@ -51,5 +56,17 @@
     </form>
 
 </body>
+<div class="footer-container">
+    <!-- le css de cette partie se trouve dans ../css/style_fond_du_site.css -->
+    <footer class="footer">
+        <span class="logo"></span>
+        <nav class="foot_lien">
+            <a class="retour" href=contact_us.html>CONTACT</a>
+
+        </nav>
+    </footer>
+
+
+</div>
 
 </html>

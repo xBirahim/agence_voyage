@@ -12,21 +12,23 @@
 }
 .footer-container {
     height: 30vh; /* à titre d'exemple */
-    background-color: lightslategrey;
+    background-color: rgb(109, 109, 109);
     width: 100%;
 }
 .foot_lien{
     text-align: center;
 	color:rgb(78, 0, 0);
     padding-top: 15vh ;
-	font:200% Arial;
-}
+    font:200% Arial;
 
+}
+.retour { 
+    text-decoration: none;
+    color: #ffffff;  
+}
 .navigation{
     overflow: hidden;
     background-color: rgb(0, 0, 0);
-    padding-left: 30%;
-    padding-right: 30%;
 
 }
 .navigation a {
@@ -36,6 +38,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font:100% Arial;
+    
   }
 .navigation a.ici {
     float: left;

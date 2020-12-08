@@ -2,66 +2,54 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="../css/style_acc.css">
     <link rel="stylesheet" href="../css/style_fond_du_site.css">
-    <link rel="stylesheet" href="../css/css_trieur.css">
-    <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
-<header class="header">
 
 
+<header>
     <nav class="navigation">
-        <a class="ici" href="accueil.html">Accueil</a>
-        <a href="reservation_form.html">Reserver</a>
-        <a href="contact_us.html">Nous contacter</a>
-        <a href="connexion.html">Connexion</a>
-        <a href="panier.html">Panier</a>
+        <!--le css de cette partie se trouve dans ../css/style_fond_du_site.css 
+        la barre de navigation est largement inspiré de w3s-->
+        <a alt="Accueil" href="index.html">Accueil</a>
+        <a href="reservation_form.html" alt="Reserver">Reserver</a>
+        <a class="ici" href="contact_us.html" alt="Nous contacter">Nous contacter</a>
+        <a href="connexion.html" alt="Connexion">Connexion</a>
+        <a href="panier.html" alt="Panier">Panier</a>
     </nav>
-
 </header>
-<main>
-    <h1>Qui sommes-nous ?</h1>
-    <h2>let's fly</h2>
-    <h3>Une agence de voyage avec des destinations exotiques, tout ca à petit prix.</h3>
+<br>
+<main class="main_contact">
+    <div class="information">
+        <h1>Qui sommes-nous ?</h1>
+        <h2>let's fly</h2>
+        <h3>Une agence de voyage avec des destinations exotiques, tout ca à petit prix.</h3>
+        <p class="texte">
+            Retrouvez nous grâce à <a class="btn" href='https://www.google.com/maps/place/Lyon'>Google Maps</a></p>
 
-    <h1>Contactez nous... </h1>
+        <p class="texte">
+            Envoyez nous un mail <a class="btn" href="mailto:letsfly@abc.xyz">ici</a></p>
+        <p class="texte">
+            <a class="btn" href="tel:987654321">Appelez nous !</a></p>
 
-    <h2>...De différentes manières</h2>
-
-    <ul>
-        <li>
-            <p>
-                Retrouvez nous grâce à <a href='https://www.google.com/maps/place/Lyon'>Google Maps</a></p>
-        </li>
-        <li>
-            <p>
-                Envoyez nous un mail <a href="mailto:letsfly@abc.xyz">ici</a></p>
-        </li>
-        <li>
-            <p>
-                <a href="tel:987654321">Appelez nous !</a></p>
-        </li>
-        <li>
-            <p>
-                <a href="tel:123456789">Ca ne marche pas ? Essayez ici !</a></p>
-        </li>
-    </ul>
+        <p class="texte">
+            <a class="btn" href="tel:123456789">Ca ne marche pas ? Essayez ici !</a></p>
 
 
-    <h3>© 2020 Let's Fly (All rights reserved)
-        <a href="accueil.html"> Accueil</a>
-    </h3>
 
 
+    </div>
 </main>
+<br>
 <div class="footer-container">
     <footer class="footer">
         <span class="logo"></span>
         <nav class="foot_lien">
-            <a href=contact_us.html>CONTACT</a>
+            <a class="fin">© 2020 Let's Fly (All rights reserved)
+            </a>
 
+            <a class="retour" href="accueil.html"> Accueil</a>
         </nav>
     </footer>
 </div>
