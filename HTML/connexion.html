@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr" class="fond_site">
-    <head>
-        <meta charset="UTF-8">
-        <title>test</title>
-        <link rel="stylesheet" href="../css/style_acc.css">
-        <link rel="stylesheet" href="../css/style_fond_du_site.css">
-        <link rel="stylesheet" href="../css/css_trieur.css">
-        <script src='../js/accueil.js'> </script>
-        <script src='../js/js_header.js'> </script>
-        <script src='../js/filtre.js'> </script>   
-        <script src='../js/apiOpenWeather.js'> </script> 
-        
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="../css/style_acc.css">
+    <link rel="stylesheet" href="../css/style_fond_du_site.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src='../js/accueil.js'>
+    </script>
+    <script src='../js/js_header.js'>
+    </script>
+    <script src='../js/filtre.js'>
+    </script>
+    <script src='../js/apiOpenWeather.js'>
+    </script>
+
+
+</head>
+
 <body>
+    <header class="header">
 
-<h2>Login Form</h2>
 
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+        <nav class="navigation">
+            <a class="ici" href="accueil.html">Accueil</a>
+            <a href="reservation_form.html">Reserver</a>
+            <a href="contact_us.html">Nous contacter</a>
+            <a href="connexion.html">Connexion</a>
+            <a href="panier.html">Panier</a>
+        </nav>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    </header>
+    <h2>Connexion</h2>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
+    <form action="index.html">
+        <div class="container">
+            <label for="uname"><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="ex:John Doe" id="uname" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="ex:123456789" id="psw" required>
+
+            <button type="submit">Se connecter</button>
+            <label>
+      <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
     </label>
-  </div>
+        </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+        <div class="container">
+            <button type="button" class="cancelbtn">Annuler</button>
+            <span class="psw">Problèmes de connexion ?<a href="#">Appuyez ici</a></span>
+        </div>
+    </form>
 
 </body>
+
 </html>
