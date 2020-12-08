@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <title>Exemple Template</title>
     <link rel="stylesheet" href="../css/style_acc.css">
-    <script src="../js/template_js.js"></script>
+    <link rel="stylesheet" href="../css/style_fond_du_site.css">
+    <link rel="stylesheet" href="../css/css_trieur.css">
+    <script src="../js/template.js"></script>
+
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
 
-        <a href="accueil.html">
-            <img src="media/images/paysage1.png" height="216" width="384" alt="paysage">
-        </a>
-        <br>
-        <label for="search_bar">Rechercher:</label>
+
+        <nav class="navigation">
+            <a class="ici" href="accueil.html">Accueil</a>
+            <a href="reservation_form.html">Reserver</a>
+            <a href="contact_us.html">Nous contacter</a>
+            <a href="connexion.html">Connexion</a>
+            <a href="panier.html">Panier</a>
+        </nav>
+        <!-- <label for="search_bar">Rechercher:</label>
         <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
-        <button id="search_button">Search</button>
-
+        <button id="search-button">Search</button>-->
     </header>
-    <nav>
-        <a href="accueil.html">Accueil</a>
-        <a href="reservation_form.html">Reserver</a>
-        <a href="contact_us.html">Nous contacter</a>
-        <a href="connexion.html">Connexion</a>
-        <a href="panier.html">Panier</a>
-    </nav>
 
     <div id="all">
 
@@ -46,5 +45,6 @@
     </div>
 
 </body>
+
 
 </html>
