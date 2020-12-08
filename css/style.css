@@ -25,14 +25,14 @@ body {
     
     }
    input, textarea, select, option {
-    background-color:#FFF3F3;
+    background-color:#d3edff;
     }
    input, textarea, select {
     padding:3px;
-    border:1px solid #F5C5C5;
+    border:1px solid #b1b1b1;
     border-radius:5px;
     width:200px;
-    box-shadow:1px 1px 2px #C0C0C0 inset;
+    
     }
    select {
     margin-top:10px;
@@ -46,6 +46,5 @@ body {
    input[type=submit], input[type=reset] {
     width:100px;
     margin-left:5px;
-    box-shadow:1px 1px 1px #D83F3D;
     cursor:pointer;
     }
