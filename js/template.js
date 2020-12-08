@@ -128,9 +128,9 @@ for (var i = 0; i < destinations.length; i++) {
     image.setAttribute("alt", destinations[i]["nom"]);   
     link.setAttribute("href", "../HTML/reservation_form.html    ")
 
-    content.querySelector(".description").textContent = destinations[i]["presentation"]
+    content.querySelector(".text").textContent = destinations[i]["presentation"]
 
-    document.getElementById("all").appendChild(content)
+    document.getElementById("all").appendChild(content) //Ajout de la description
         
     }
 

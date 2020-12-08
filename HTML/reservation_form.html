@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" href="../css/style_fond_du_site.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/calcul_tarif.js"></script>
+    <link rel="stylesheet" href="../css/style_acc.css">
+    <script src="../js/tarification.js"></script>
     <meta charset="UTF-8">
     <title>reservation_form</title>
 </head>
@@ -12,17 +13,18 @@
 
 
 <header class="header">
-    <!--<a href="accueil.html">
-            <img src="media/images/paysage.png" alt="paysage">
-        </a>-->
+
 
     <nav class="navigation">
-        <a href="index.html">Accueil</a>
-        <a  class="ici" href="reservation_form.html">Reserver</a>
+        <a class="ici" href="accueil.html">Accueil</a>
+        <a href="reservation_form.html">Reserver</a>
         <a href="contact_us.html">Nous contacter</a>
         <a href="connexion.html">Connexion</a>
         <a href="panier.html">Panier</a>
     </nav>
+    <!-- <label for="search_bar">Rechercher:</label>
+    <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
+    <button id="search-button">Search</button>-->
 </header>
 <main>
     <h1>Formulaire de réservation</h1>
@@ -80,21 +82,18 @@
 
     </form>
 
-    <button type="button" onclick=total()>
-        Test JS
-    </button>
-
     <div>
         <p> Prix Total :</p>
         <p id="prix">0</p>
     </div>
 </main>
+
 <div class="footer-container">
     <footer class="footer">
         <span class="logo"></span>
         <nav class="foot_lien">
             <a href=contact_us.html>CONTACT</a>
-
         </nav>
     </footer>
 </div>
+</html>

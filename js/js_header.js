@@ -11,8 +11,4 @@ window.addEventListener('load',function(){
     }
 })
 
-  
-
-
 });
-
