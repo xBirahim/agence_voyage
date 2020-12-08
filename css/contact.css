@@ -1,0 +1,52 @@
+.main_contact{
+    font:100% Arial;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    height: 300px;
+    
+}
+
+.information{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+}
+
+.contact{
+
+    font:100% Arial;
+    display: block;
+    border: none;
+    width: 100%;
+
+  }
+.contact a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+    background-color: rgb(161, 161, 161);
+}
+
+.contact a:hover{
+
+    background-color:rgb(43, 43, 43)
+
+}
+.adresse {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+    background-color: rgb(161, 161, 161);
+
+
+
+}

@@ -18,19 +18,21 @@
 <header class="header">
 
 
-    <nav class="navigation">
-        <a class="ici" href="accueil.html">Accueil</a>
-        <a href="reservation_form.html">Reserver</a>
-        <a href="contact_us.html">Nous contacter</a>
-        <a href="connexion.html">Connexion</a>
-        <a href="panier.html">Panier</a>
+    <nav class="navigation"><!--le css de cette partie se trouve dans ../css/style_fond_du_site.css 
+    la barre de navigation est largement inspiré de w3s-->
+        <a class="ici"alt="Accueil" href="index.html">Accueil</a>
+        <a href="reservation_form.html"alt="Reserver">Reserver</a>
+        <a href="contact_us.html"alt="Nous contacter">Nous contacter</a>
+        <a href="connexion.html"alt="Connexion">Connexion</a>
+        <a href="panier.html"alt="Panier">Panier</a>
     </nav>
     <!-- <label for="search_bar">Rechercher:</label>
     <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
     <button id="search-button">Search</button>-->
 </header>
 <main class="corps">
-    <div class="slideshow-container">
+    <div class="slideshow-container"><!--le css de cette partie se trouve dans ../css/style_acc.css , le js a ../js/accueil.js
+        la partie slide vient de  w3s, legerement modifiée pour nos besoins-->
 
         <div class="mySlides fade">
             <div class="nombre">1 / 3</div>
@@ -70,10 +72,10 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
-    <section class="bloc_principal">
+    <section class="bloc_principal"> <!--tout le css de cette partie se trouve a ../css/css_trieur.css-->
         <br>
         <div class="myBtnContainer">
-            <button class="0 initial" onclick="tout(),clicke('0')">Tout afficher</button>
+            <button class="0 initial" onclick="tout(),clicke('0')">Tout afficher</button><!--le js du trieur et de son affichage se trouve a '../js/filtre.js'-->
             <div class="elements_filtre">
                 <button class="1 " onclick="del('petitsPrix'), clicke('1') "> petits prix</button>
                 <button class="2" onclick="del('nouveau'), clicke('2')"> Nouvautées</button>
@@ -87,7 +89,7 @@
             <p class="text_trie">Dakar ceci est un texte de presentation du pays qui nous donne envie de voyager ainsi
                 que des informations sur les condtions du voyage et le prix.</p>
             <div class="temp_css">
-                <a id="temperature">temperature</a>
+                <a id="temperature">temperature</a> <!--le js de l'openweather se trouve a ../js/apiOpenWeather.js-->
                 <a class="valeur_temp" id="dakar"></a>
                 <script>meteo("dakar")</script>
             </div>
@@ -133,7 +135,7 @@
     </section>
 </main>
 
-<div class="footer-container">
+<div class="footer-container"> <!-- le css de cette partie se trouve dans ../css/style_fond_du_site.css -->
     <footer class="footer">
         <span class="logo"></span>
         <nav class="foot_lien">
