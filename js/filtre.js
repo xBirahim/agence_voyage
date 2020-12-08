@@ -6,16 +6,17 @@ window.addEventListener("load", function () { // permet au chargement de la page
 tout()
 });
 function tout() { //fonction qui permet d'afficher tout les produits (pour l'ouverture de la page)
-    var x;
+    var x,z;
     x = document.getElementsByClassName("trie"); //on recupere les valeurs dans les elements de classe trie
+    z=document.getElementsByClassName("initial");
     for (i = 0; i < x.length; i++) { // boucle qui parcours x
-        console.log("testfor");
         var liste = x[i].className.split(" "); //on obtient un liste des parametre de la classe
         if (liste[liste.length - 1] != "show") { // on verifie que show n'est pas deja present
             x[i].className = x[i].className + " show"; //on rajoute à la liste show qui permet de l'afficher avec CSS
         }
 
     }
+
 
 }
 
@@ -40,3 +41,19 @@ function del(y) { // fonction qui ne concerve que les elements qui possedes y da
 
     }
 }
+
+
+
+function clicke(btn){
+    z = document.getElementsByClassName("initial");
+    console.log(z)
+    for (i = 0; i < z.length; i++) {
+        var listebtn = z[i].className.split(" ")
+        if (listebtn[0]!= "0"){
+            z[i].className = (z[i].className.split(" initial")[0])
+        }
+    }
+    z = document.getElementsByClassName(btn)
+    z[0].className = z[0].className + " initial";
+}
+

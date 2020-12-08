@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="../css/css_trieur.css">
     <script src='../js/accueil.js'> </script>
     <script src='../js/js_header.js'> </script>
-    <script src='../js/filtre.js'> </script>   
+    <script src='../js/filtre.js'> </script>
     <script src='../js/apiOpenWeather.js'> </script>
 
-    
+
 
 </head>
 <header class="header">
 
 
     <nav class="navigation">
-        <a   class = "ici" href="accueil.html">Accueil</a>
+        <a class="ici" href="accueil.html">Accueil</a>
         <a href="reservation_form.html">Reserver</a>
         <a href="contact_us.html">Nous contacter</a>
         <a href="connexion.html">Connexion</a>
         <a href="panier.html">Panier</a>
     </nav>
-   <!-- <label for="search_bar">Rechercher:</label>
+    <!-- <label for="search_bar">Rechercher:</label>
     <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
     <button id="search-button">Search</button>-->
 </header>
@@ -72,12 +72,14 @@
     </div>
     <section class="bloc_principal">
         <br>
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="tout()"> all</button>
-            <button class="btn" onclick="del('petitsPrix')"> petits prix</button>
-            <button class="btn" onclick="del('nouveau')"> Nouvautées</button>
-            <button class="btn" onclick="del('Amerique')"> Amerique</button>
-            <button class="btn" onclick="del('Europe')"> Europe </button>
+        <div class="myBtnContainer">
+            <button class="0 initial" onclick="tout(),clicke('0')">Tout afficher</button>
+            <div class="elements_filtre">
+                <button class="1 " onclick="del('petitsPrix'), clicke('1') "> petits prix</button>
+                <button class="2" onclick="del('nouveau'), clicke('2')"> Nouvautées</button>
+                <button class="3" onclick="del('Amerique'), clicke('3') "> Amerique</button>
+                <button class="4" onclick="del('Europe'), clicke('4')"> Europe </button>
+            </div>
         </div>
         <br>
         <div class="trie nouveau">
