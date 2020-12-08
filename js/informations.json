@@ -9,6 +9,31 @@
           "nom": "Paris",
           "image": "../HTML/media/template",
           "des": "voici paris"
-       }
+       },
+       {
+         "nom": "Lyon",
+         "image": "../HTML/media/template",
+         "des": "voici paris"
+      },
+      {
+         "nom": "Madrid",
+         "image": "../HTML/media/template",
+         "des": "voici paris"
+      },
+      {
+         "nom": "Sao Paulo",
+         "image": "../HTML/media/template",
+         "des": "voici paris"
+      },
+      {
+         "nom": "Alger",
+         "image": "../HTML/media/template",
+         "des": "voici paris"
+      },
+      {
+         "nom": "Mexico",
+         "image": "../HTML/media/template",
+         "des": "voici paris"
+      }
     ]
  }
