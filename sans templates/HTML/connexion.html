@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" class="fond_site">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <link rel="stylesheet" href="../css/style_fond_du_site.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src='../js/accueil.js'></script>
+        <script src='../js/js_header.js'></script>
+        <script src='../js/filtre.js'></script>
+        <script src='../js/apiOpenWeather.js'></script>
+    
+    </head>
+
+<header>
+
+
+  <nav class="navigation">
+    <!--le css de cette partie se trouve dans ../css/style_fond_du_site.css 
+        la barre de navigation est largement inspiré de w3s-->
+    <a alt="Accueil" href="index.html">Accueil</a>
+    <a href="reservation_form.html" alt="Reserver">Reserver</a>
+    <a href="contact_us.html" alt="Nous contacter">Nous contacter</a>
+    <a class="ici" href="connexion.html" alt="Connexion">Connexion</a>
+    <a href="panier.html" alt="Panier">Panier</a>
+  </nav>
+
+</header>
+
+
+
+<body>
+
+    <h2>Connexion</h2>
+
+    <form action="index.html">
+        <div class="container">
+            <label for="uname"><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="ex:John Doe" id="uname" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="ex:123456789" id="psw" required>
+
+            <button type="submit">Se connecter</button>
+            <label>
+      <input type="checkbox" checked="checked" name="remember"> Rester connecté ?
+    </label>
+        </div>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Annuler</button>
+            <span class="psw">Problèmes de connexion ?<a href="#">Appuyez ici</a></span>
+        </div>
+    </form>
+
+</body>
+<div class="footer-container"> <!-- le css de cette partie se trouve dans ../css/style_fond_du_site.css -->
+    <footer class="footer">
+        <span class="logo"></span>
+        <nav class="foot_lien">
+            <a class= "retour" href=contact_us.html>CONTACT</a>
+
+        </nav>
+    </footer>
+
+    
+</div>
+</html>
