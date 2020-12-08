@@ -123,7 +123,7 @@ window.onload = function() {
         image.setAttribute("alt", destinations[i]["nom"]);
         link.setAttribute("href", "../HTML/reservation_form.html")
 
-        content.querySelector(".description").textContent = destinations[i]["presentation"]
+        content.querySelector(".text_trie").textContent = destinations[i]["presentation"]
         meteo(temp, destinations[i].nom);
 
         document.getElementById("all").appendChild(content) //Ajout de la description

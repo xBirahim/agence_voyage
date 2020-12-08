@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple Template</title>
+    <link rel="stylesheet" href="../css/style_acc.css">
+    <link rel="stylesheet" href="../css/style_fond_du_site.css">
+    <link rel="stylesheet" href="../css/css_trieur.css">
+    <script src="../js/template.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+
+        <nav class="navigation">
+            <a class="ici" href="index.html">Accueil</a>
+            <a href="reservation_form.html">Reserver</a>
+            <a href="contact_us.html">Nous contacter</a>
+            <a href="connexion.html">Connexion</a>
+        </nav>
+        <label for="search_bar">Rechercher:</label>
+        <input type="search" id="search_bar" name="q" aria-label="Rechercher un pays">
+        <button id="search-button">Search</button>
+    </header>
+
+    <div id="all">
+
+        <template id=destination>
+            
+            <div id="liste">
+
+                <a> <img class="illustration" src="" alt="" style="width: 100%;"> </a>
+                <p class="text_trie"></p>
+                <div class="temp">
+                    <a class="temp_css">Température:</a>
+                </div>
+                <a class="reservation2" href="reservation_form.html">réservation</a>
+
+            </div>
+
+        </template>
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,100 @@
+.trie {
+    display: none;
+    position: relative;
+    padding-top: 5%;
+}
+
+.show {
+    display: block;
+}
+
+.bloc_principal {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.text_trie {
+    position: static;
+    top: 25%;
+    right: 1%;
+    left: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font: 100% Arial;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.reservation2 {
+    position: relative;
+    bottom: 5%;
+    right: 1%;
+    left: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    font: 100% Arial;
+    padding: 1%;
+}
+
+.temp_css {
+    position: relative;
+    top: 10%;
+    right: 80%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font: 100% Arial;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.initial {
+    color: rgb(255, 255, 255);
+    background-color: #010052;
+    padding: 20% 20%;
+    font: 100% Arial;
+    display: block;
+    border: none;
+    width: 180px
+}
+
+.myBtnContainer {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.elements_filtre {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0% 1% 2% 0% rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.elements_filtre button {
+    color: black;
+    padding: 20% 20%;
+    font: 100% Arial;
+    display: block;
+    border: none;
+    width: 180px
+}
+
+.elements_filtre button:hover {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.myBtnContainer:hover .elements_filtre {
+    display: block;
+}
+
+.myBtnContainer:hover .initial {
+    background-color: #030169;
+    color: white;
+}

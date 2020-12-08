@@ -1,0 +1,58 @@
+.main_contact{
+    font:100% Arial;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    height: 300px;
+    
+}
+
+.information{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+}
+
+.texte{
+
+    font:100% Arial;
+    display: block;
+    border: none;
+    height:  30px;
+
+  }
+.btn{
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn:hover{
+
+    background-color:rgb(206, 206, 206);
+    color: black;
+
+}
+
+
+.fin{
+    color: white;
+    font:100% Arial;
+    padding-top:0px ;
+}
+
+.retour{
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font:100% Arial;
+    background-color:rgb(109, 109, 109);
+}
