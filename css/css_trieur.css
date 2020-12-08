@@ -1,9 +1,64 @@
 .trie {
     display: none;
     position: relative;
-    padding-top: 2%;
+    padding-top: 5%;
 
 }
 .show{
     display: block;
+}
+
+.bloc_principal{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+
+
+}
+
+
+.text_trie
+{
+
+    position: absolute;
+    top: 25%;
+    right: 1%;
+    left: 80%;
+    background :rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font:100% Arial;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.reservation2{
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    left: 80%;
+    background :rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    font:100% Arial;
+    padding: 1%;
+  
+  
+  }
+
+.temp_css{
+
+    position: absolute;
+    top: 20%;
+    right: 80%;
+    left: 1%;
+    background :rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    font:100% Arial;
+    padding: 1%;
+
+
 }

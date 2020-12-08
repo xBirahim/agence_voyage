@@ -96,7 +96,7 @@
   }
 .text{
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 5%;
   left: 75%;
   background :rgba(0, 0, 0, 0.5);
@@ -111,14 +111,13 @@
 .reservation{
   position: absolute;
   bottom: 5%;
-  right: 10%;
-  left: 80%;
+  right: 5%;
+  left: 75%;
   background :rgba(0, 0, 0, 0.8);
   text-align: center;
   color: white;
   font:100% Arial;
   padding: 1%;
-
 
 
 }
